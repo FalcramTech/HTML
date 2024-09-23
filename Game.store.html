@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="game.css">
+  <title>Game Store</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a>Mirror of Time</a>
+    </div>
+    <ul>
+        <a href="#">Home</a>
+        <a href="#">Game</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </ul>
+    <div class="account">
+        <a href="#" class="profile-btn">My Accounts</a>
+    </div>            
+</header>
+<div class="sell-items-left">
+    <div class="game-items">
+        <p>Path of Exile <button onclick="buyItem('Path of Exile', 0)">Add to Cart</button> <span id="stock-Path-of-Exile">10</span></p>
+        <p>World of Warcraft <button onclick="buyItem('World of Warcraft', 60)">Add to Cart</button> <span id="stock-World-of-Warcraft">10</span></p>
+        <p>Warcraft <button onclick="buyItem('Warcraft', 40)">Add to Cart</button> <span id="stock-Warcraft">10</span></p>
+        <p>Last Epoch <button onclick="buyItem('Last Epoch', 60)">Add to Cart</button> <span id="stock-Last-Epoch">10</span></p>
+        <p>Diablo IV <button onclick="buyItem('Diablo IV', 109)">Add to Cart</button> <span id="stock-Diablo-IV">10</span></p>
+    </div>
+    <div id="cart">
+        <h3>Shopping Cart: <span id="cart-total">0</span></h3>
+        <ul id="items"></ul>
+        <p>Total Items: <span id="cart-quantity">0</span></p>
+    </div>
+</div>
+<div class="container">
+    <div class="box box-1" 
+        style="--img: url(https://image.api.playstation.com/cdn/EP4956/CUSA11782_00/czANsmjfgn1vkJ2rQxmgRhdyEa8nRXwD.png);" 
+        data-text="Free">
+        <div class="description">
+            <p>Path of Exile is a free-to-play action role-playing video game developed and published by Grinding Gear Games.</p>
+        </div>
+    </div>
+    <div class="box box-2" 
+        style="--img: url(https://m.media-amazon.com/images/I/81feWhChfIL.jpg);" 
+        data-text="$59,99">
+        <div class="description">
+            <p>The game allows players to create a character avatar and explore an open game world in third- or first-person view, exploring the landscape, fighting various monsters, completing quests, and interacting with non-player characters (NPCs) or other players.</p>
+        </div>
+    </div>
+    <div class="box box-3" 
+        style="--img: url(https://i.pinimg.com/564x/0a/ae/9e/0aae9ecc1719990298745288cd88fc93.jpg);" 
+        data-text="$39,99">
+        <div class="description">
+            <p>Warcraft: is a real-time strategy game released by Blizzard Entertainment. The game takes place in the world of Azeroth. The events reproduced in the game refer to the First Great War (or simply the Great War) in the World of Warcraft.</p>
+        </div>
+    </div>
+    <div class="box box-4" 
+        style="--img: url(https://hastega.net/wp-content/uploads/2021/09/bf27a301fda60f6890b10393df5328ec.jpg);" 
+        data-text="$59,00">
+        <div class="description">
+            <p>Time travel, exciting dungeons, exciting character customization and endless replayability await you in Last Epoch. This game in the genre of "role action" will appeal to both experienced players and beginners.</p>
+        </div>
+    </div>
+    <div class="box box-5" 
+        style="--img: url(https://4kwallpapers.com/images/wallpapers/diablo-iv-lilith-diablo-4-2022-games-1280x1280-5969.png);" 
+        data-text="$109,00">
+        <div class="description">
+            <p>Diablo is a series of video games in the role-playing</p>
+        </div>    
+    </div>
+</div>
+<div class="comments-section">
+    <h3>Leave the comments</h3>
+    <input type="text" class="comment-input" placeholder="Enter your comments...">
+    <button class="add-comment-btn">Add Comment</button>
+    <ul class="comments-list"></ul>   
+<script src="cart.js"></script>  
+</body>
+</html>
